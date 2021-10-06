@@ -1,0 +1,126 @@
+
+.toolbar1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lists
+{
+    display: flex;
+    flex-direction: row;
+    min-width: 400px;
+}
+.lists .lin{
+    
+    margin: 10px;
+    gap: 2px;
+    padding-left: 5px;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(0, 16, 17,0.8); 
+    border: 1px solid #6CCFF6;
+    outline: none;
+    text-decoration: none;
+    outline-offset: unset;
+   
+}
+
+.lists .lin:hover{
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.menu_icon{
+    display: none;
+}
+.mobile-lists
+    {
+       
+        display: none;
+    }
+
+.mobile-lists .lin
+    {
+         display: flex;
+         flex-direction: column;
+         color: rgb(0, 16, 17,0.8);
+         padding: 10px;
+         align-items: center;
+         justify-content: center;
+         font-weight: bold;
+         text-decoration: none;
+         border: 1px solid #6CCFF6;
+         
+    }
+.page-title
+{
+    text-decoration: none;
+    color: rgb(0, 16, 17,0.8);
+    font: 700;
+    font-size: 25px;
+}
+.contact-us-btn
+{
+    border-radius: 10px;
+    outline: none;
+    outline-offset: unset;
+    
+    
+}
+.contact-us-btn:hover
+{
+    font-weight: 900;
+}
+.mobile-lists .lin:hover
+    {
+        cursor: pointer;
+        outline: none;
+        font-weight: bold;
+        border-bottom: 1px solid white;
+        border-radius: 10px;
+    }
+.bluring
+{
+    display: none;
+}
+@media  screen and (max-width:800px) {
+   
+    .lists
+    { 
+        display: none; 
+    }
+    .mobile-lists
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #6CCFF6;
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        padding-top: 20px;
+        z-index: 400;
+        justify-content: stretch;
+        transform: translatex(-600px);
+        transition: 0.4s;
+        color: rgb(0, 16, 17,0.8);
+    }
+    .bluring
+    {
+        display: block;
+        position: absolute;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0,0,0,0.5);
+        transform: translatex(1000px);
+        z-index:390;
+    }
+    .menu_icon{
+        display: block;
+    }
+}
