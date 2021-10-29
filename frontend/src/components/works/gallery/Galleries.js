@@ -14,7 +14,7 @@ function Galleries() {
             <Carousel breakPoints={breakPoints} outerSpacing={2}>
                 {posts.map((post)=>(
                     <div style={{marginTop:'100px',padding:'50px'}}>
-                        <img style={{alignContent:'center',justifyContent:'center',minHeight:'300px',maxWidth:'350px'}} src={post.selectedFile}/>
+                        <img alt='miki'style={{alignContent:'center',justifyContent:'center',minHeight:'300px',maxWidth:'350px'}} src={post.selectedFile}/>
                         <p className='title'>{post.title}</p>
                         <p className='title'>{post.creator}</p>
                     </div>

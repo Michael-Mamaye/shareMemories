@@ -2,9 +2,6 @@ import { Container,Typography,Grid,Card,CardMedia } from '@material-ui/core'
 import React from 'react'
 import useStyles from './style'
 import sunrise from '../../images/sunrise.jpg'
-import Cup from '../../images/cup.jpg'
-import Travlers from '../../images/travlers.jpg'
-import Mainpic from '../../images/friends.jpg'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import {Carousel} from 'react-responsive-carousel'
 import { useSelector } from 'react-redux'
@@ -27,7 +24,7 @@ function Home() {
                             <Carousel style={{display:'flex',flexDirection:'row',padding:'10px',margin:'0px'}} >
                                {posts.map((post) => (
                                    <div>
-                                       <img src={post.selectedFile}/>
+                                       <img src={post.selectedFile} alt='miki'/>
                                        <p style={{color:'white',marginBottom:'10px'}}>{post.title}</p>
                                    </div>
                                 ))}     
