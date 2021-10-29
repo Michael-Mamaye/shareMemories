@@ -11,4 +11,21 @@ export default makeStyles((theme) => ({
   actionDiv: {
     textAlign: 'center',
   },
+  SearchIconStyle: { 
+    marginTop: '10px', 
+    height: '40px', 
+    width: '40px', 
+    '&:hover': { 
+      cursor: 'pointer !important' 
+    }
+  },
+  searchFormControl:{
+    borderRadius:'30px',
+    height: '3rem',
+    justifyContent:'center',
+    alignItems:'center',
+    fontSize:'17px',
+    fontWeight:'bold',
+    padding:'5px'
+  }
 }));

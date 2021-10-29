@@ -9,14 +9,14 @@ export default makeStyles(() => ({
     justifyContent: 'space-around',
     alignItems: 'center',
     position:'fixed',
-    backgroundColor:'#6CCFF6',
+    backgroundColor:'#00203FFF',
   },
   heading: {
-    Color:'white',
+    Color:'#ADEFD1FF',
     // color: 'rgba(0,183,255, 1)',
   },
   mainNav:{
-    backgroundColor:'black',
+    backgroundColor:'#00203FFF',
     marginLeft:'-10px',
     marginBottom:'30px',
     display: 'flex',
@@ -26,13 +26,16 @@ export default makeStyles(() => ({
     position:'fixed'
   },
   links:{
-      // color: 'rgba(0,183,255, 1)',
-      color:'white',
+      
+      color:'#ADEFD1FF',
       letterSpacing:'1px',
       margin:'10px',
       fontWeight:'bolder',
       fontSize:'21px',
       textDecoration:'none'
+  },
+  withoutShadow:{
+    boxShadow:'0px 0px 0px black'
   }
   
 }));

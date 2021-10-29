@@ -2,14 +2,15 @@ import { AppBar,Toolbar,Container,IconButton,Typography, MenuList } from '@mater
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import Camera from '@material-ui/icons/Camera'
-
+import useStyles from './styles'
 import MenuIcon from '@material-ui/icons/Menu'
 
 import './navbars.css'
 
 const NavBars =()=>
 { 
-
+    const classes=useStyles()
+    const [state,setState]=useState(false)
     const [starter, setstarter] = useState(false)
     const handleEvents=()=>
     {
@@ -19,10 +20,22 @@ const NavBars =()=>
     {
         setstarter(false)
     }
+
+    const handleChange1=()=>
+    {
+        if(window.scrollY<200){
+        setState(true)
+        }
+        else
+        {
+        setState(false)
+        }
+    }
+    window.addEventListener('scroll',handleChange1)
     return (
         <React.Fragment>
             <Container>
-            <AppBar position="fixed"  style={{background:'#6CCFF6'}}>
+            <AppBar className={state?classes.withoutShadow:null}position="fixed"  style={{background:'#00203FFF'}}>
                 <Toolbar className="toolbar1">
                     <Typography variant="h6" className="classes.title">
                         <Camera/>

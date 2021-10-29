@@ -26,14 +26,13 @@ export default makeStyles((theme)=>({
           fontSize:'25px',
           fontWeight:'bolder',
           fontFamily:'veranda',
-          color: 'rgb(0, 16, 17,0.7)'
+          color: 'rgb(173, 239, 209,0.8)'
       },
       titlebig:{
         textAlign:'center',
         fontSize:'30px',
         fontWeight:'bolder',
-        fontFamily:'veranda',
-        color: 'rgb(0, 16, 17,0.7)'
+        color: 'rgb(173, 239, 209,0.8)'
       },
       
       par:{
@@ -42,7 +41,7 @@ export default makeStyles((theme)=>({
         fontWeight:'200',
         fontSize:'20px',
         padding:"10px",
-        color: 'rgb(119, 119, 119)'
+        color: 'rgb(200, 200, 200,0.8)'
       },
       par1:{
         textAlign:'left',
@@ -68,5 +67,17 @@ export default makeStyles((theme)=>({
         fontWeight:'bolder',
         fontFamily:'veranda',
         color: 'rgb(0, 16, 17,0.7)'
+      },
+      mainHomeTitle:{
+        fontSize:'70px',
+        color: 'rgb(173, 239, 209,0.8)',
+        alignItems:'right',
+        justifyContent:'center',
+        [theme.breakpoints.down("sm")]:{
+           fontSize:'40px'
+        }
+      },
+      thisGrid:{
+        boxShadow:'none'
       }
 }));

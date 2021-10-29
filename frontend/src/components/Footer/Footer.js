@@ -7,7 +7,7 @@ import {Mail,Phone,Facebook,Instagram,Telegram} from '@material-ui/icons'
 const Footer=()=> {
     const classes=useStyles()
     return (
-        <div style={{color:'rgb(101,101,101)',backgroundColor:'rgba(0, 16, 17,0.9)',margin:'-8px',marginTop:'100px',overflowX:'hidden',paddingLeft:'30px',paddingBottom:'80px'}}>
+        <div style={{color:'rgb(101,101,101)',backgroundColor:'#00203FFF',margin:'-8px',marginTop:'100px',overflowX:'hidden',paddingLeft:'30px',paddingBottom:'80px'}}>
                 <Container>
                     <Grid container spacing={3}>
                         <Grid className={classes.footers} container xs={12} sm={12} spacing={5}>

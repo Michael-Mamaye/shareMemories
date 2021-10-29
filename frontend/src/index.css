@@ -1,6 +1,29 @@
 body {
     background-color: white;
+    color: #00203FFF;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    overflow-x: hidden;
 }
 *{
     scroll-behavior: smooth;
+}
+.carousel .slide{
+    background-color: #00203FFF;
+}
+.carousel li img{
+    height: 500px;
+}
+@media screen and (max-Width:600px) {
+    .carousel li img{
+        height: 350px;
+    }
+}
+.carousel .control-dots{
+    margin:60px auto;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.thumbs-wrapper{
+    display: none;
 }

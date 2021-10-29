@@ -21,11 +21,11 @@ function List() {
             <Container maxWidth="lg">
         
                 <Grow in>
-                <Container maxWidth="lg">
-                    <Grid style={{paddingTop:'80px'}} container justify="space-between" spacing={3}>
-                            <Posts setCurrentId={setCurrentId}/>
-                    </Grid>
-                </Container>
+                    <Container maxWidth="lg">
+                        <Grid style={{paddingTop:'80px'}} container justify="space-between" spacing={3}>
+                                <Posts setCurrentId={setCurrentId}/>
+                        </Grid>
+                    </Container>
                 </Grow>
          </Container>
         
