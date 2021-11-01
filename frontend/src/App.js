@@ -4,10 +4,10 @@ import { useDispatch } from 'react-redux';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 
 import Navbar from './components/Navbar/NavBars'
-import List from './components/works/List'
-import Home from './components/works/Home'
+import List from './components/pages/List'
+import Home from './components/pages/Home'
 import ContactUs from './components/Contact/ContactUs'
-import Create from './components/works/Create'
+import Create from './components/pages/Create'
 import Footer from './components/Footer/Footer'
 import { getPosts } from './actions/posts';
 import ScrollToTop from './components/scrollToTop'

@@ -24,7 +24,7 @@ const Posts = ({ setCurrentId }) => {
   }
   const filteredList=()=> searched? searched:posts;
   return (
-    <div>
+    <div style={{minHeight:'500px'}}>
         <Container>
             <div style={{marginTop:'20px',marginBottom:'30px'}}>
                 <FormControl >
