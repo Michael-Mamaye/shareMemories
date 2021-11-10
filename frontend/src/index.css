@@ -5,6 +5,16 @@ body {
     margin: 0px;
     overflow-x: hidden;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #00203FFF;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00203FFF,rgb(12, 92, 172));
+    border-radius: 20%;
+}
 *{
     scroll-behavior: smooth;
 }
